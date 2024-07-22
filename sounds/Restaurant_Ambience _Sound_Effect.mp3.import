@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btsg45tkgvq8d"
+path="res://.godot/imported/Restaurant_Ambience _Sound_Effect.mp3-2abf424ae48253983ae82c353ac1de4e.mp3str"
+
+[deps]
+
+source_file="res://sounds/Restaurant_Ambience _Sound_Effect.mp3"
+dest_files=["res://.godot/imported/Restaurant_Ambience _Sound_Effect.mp3-2abf424ae48253983ae82c353ac1de4e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

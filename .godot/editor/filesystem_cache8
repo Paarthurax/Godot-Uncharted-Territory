@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1721680071
+icon.svg::CompressedTexture2D::2187775834378430530::1721676520::1721676526::1::::<><>::
+README.md::TextFile::-1::1721679913::0::1::::<><>::
+::res://images/::1721679968
+hamburger.jpg::CompressedTexture2D::2820671927019385941::1721676914::1721676914::1::::<><>::
+::res://scenes/::1721679968
+front_restaurant_1.tscn::PackedScene::9175335559792502852::1721679423::0::1::::<><>::
+main_screen.gd::GDScript::-1::1721679413::0::1::::<>Control<>::
+main_screen.tscn::PackedScene::2022162334360007896::1721679423::0::1::::<><>::res://scenes/main_screen.gd<>uid://bggmb4bl8t5tp::::res://images/hamburger.jpg<>uid://btsg45tkgvq8d::::res://sounds/Restaurant_Ambience _Sound_Effect.mp3
+settings.tscn::PackedScene::7004590861246554775::1721679423::0::1::::<><>::
+::res://scripts/::1721676586
+::res://sounds/::1721679968
+Restaurant_Ambience _Sound_Effect.mp3::AudioStreamMP3::3757585207883638573::1721679314::1721679321::1::::<><>::
