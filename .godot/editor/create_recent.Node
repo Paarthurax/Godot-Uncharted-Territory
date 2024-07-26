@@ -1,7 +1,9 @@
-AudioStreamPlayer
-Label
-Button
 VBoxContainer
+HBoxContainer
+AudioStreamPlayer
+Button
+HSlider
+Label
 CenterContainer
 MarginContainer
 Sprite2D

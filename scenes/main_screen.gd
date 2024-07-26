@@ -11,3 +11,15 @@ func _ready():
 func _process(_delta):
 	if not audio_player.is_playing():
 		audio_player.play()
+
+
+func _on_settings_pressed():
+	get_tree().change_scene_to_file("res://scenes/settings.tscn");
+
+
+func _on_exit_pressed():
+	get_tree().quit();
+
+
+func _on_start_pressed():
+	get_tree().change_scene_to_file("res://scenes/game/front_hospital.tscn");

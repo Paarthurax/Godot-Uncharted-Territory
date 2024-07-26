@@ -1,4 +1,7 @@
 res://scenes/main_screen.tscn
-res://scenes/main_screen.gd
 res://scenes/front_restaurant_1.tscn
 res://scenes/settings.tscn
+res://scenes/settings.gd
+res://scenes/game/front_restaurant_1.tscn
+res://scenes/main_screen.gd
+res://scenes/game/front_hospital.tscn
