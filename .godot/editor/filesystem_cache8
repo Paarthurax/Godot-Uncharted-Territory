@@ -1,17 +1,52 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721895601
+::res://::1722193250
 icon.svg::CompressedTexture2D::2187775834378430530::1721676520::1721676526::1::::<><>::
 README.md::TextFile::-1::1721679913::0::1::::<><>::
-::res://images/::1721679968
-hamburger.jpg::CompressedTexture2D::2820671927019385941::1721676914::1721676914::1::::<><>::
-::res://scenes/::1721986576
-main_screen.gd::GDScript::-1::1721986576::0::1::::<>Control<>::
-main_screen.tscn::PackedScene::2022162334360007896::1721986569::0::1::::<><>::res://scenes/main_screen.gd<>uid://bggmb4bl8t5tp::::res://images/hamburger.jpg<>uid://btsg45tkgvq8d::::res://sounds/Restaurant_Ambience _Sound_Effect.mp3
+::res://images/::1722193250
+::res://images/background/::1722178804
+hamburger.jpg::CompressedTexture2D::2820671927019385941::1721676914::1722177737::1::::<><>::
+mcdonalds.jpg::CompressedTexture2D::973322110932135263::1722178788::1722178804::1::::<><>::
+sundown_in_the_forest.jpg::CompressedTexture2D::8049449191471356538::1722177809::1722177809::1::::<><>::
+::res://images/characters/::1722180528
+black-cat-png-cute-cat-transparent.png::CompressedTexture2D::3424289928032690972::1722180525::1722180528::1::::<><>::
+::res://images/direction/::1722193250
+orange-right-arrow.png::CompressedTexture2D::6940526123409681049::1722193246::1722193250::1::::<><>::
+::res://images/forest/::1722192114
+unsettling_forest_1.jpg::CompressedTexture2D::5642231684354107676::1722192092::1722192113::1::::<><>::
+unsettling_forest_2.jpg::CompressedTexture2D::7331935809053374699::1722192092::1722192113::1::::<><>::
+unsettling_forest_3.jpg::CompressedTexture2D::1453835774910026330::1722192092::1722192113::1::::<><>::
+unsettling_forest_4.jpg::CompressedTexture2D::4328310311763580246::1722192092::1722192113::1::::<><>::
+unsettling_forest_5.jpg::CompressedTexture2D::5447491377294833206::1722192092::1722192113::1::::<><>::
+unsettling_forest_6.jpg::CompressedTexture2D::7164924500653608595::1722192092::1722192114::1::::<><>::
+unsettling_forest_7.jpg::CompressedTexture2D::989137794170457530::1722192092::1722192113::1::::<><>::
+::res://scenes/::1722191996
+intro.tscn::PackedScene::6053351051176939942::1722191996::0::1::::<><>::uid://n4qqc0lmplkh::::res://images/background/mcdonalds.jpg<>res://scripts/intro.gd<>uid://bo10s4mvrl2iy::::res://images/characters/black-cat-png-cute-cat-transparent.png
+main_screen.tscn::PackedScene::2022162334360007896::1722191996::0::1::::<><>::res://scripts/main_screen.gd<>uid://bggmb4bl8t5tp::::res://images/background/hamburger.jpg<>uid://btsg45tkgvq8d::::res://sounds/Restaurant_Ambience _Sound_Effect.mp3
+settings.tscn::PackedScene::7004590861246554775::1722182351::0::1::::<><>::uid://bggmb4bl8t5tp::::res://images/background/hamburger.jpg<>res://scripts/settings.gd<>uid://rp6th85jiqhk::::res://sounds/Bruh sound effect.mp3
+::res://scenes/game/::1722191996
+nameperks.tscn::PackedScene::9175335559792502852::1722191996::0::1::::<><>::res://scripts/nameperks.gd<>uid://dmxhitqjqv6uo::::res://images/background/sundown_in_the_forest.jpg
+::res://scenes/game/encounters/::1722187406
+::res://scenes/game/encounters/casino/::1722183084
+casino_slot.tscn::PackedScene::2222559867232346142::1722183084::0::1::::<><>::
+::res://scenes/game/encounters/koopa/::1722171776
+::res://scenes/game/encounters/landmark/::1722171769
+::res://scenes/game/encounters/mostdeaf/::1722187406
+::res://scenes/game/encounters/stranger/::1722171783
+::res://scenes/game/encounters/zimba/::1722172617
+::res://scenes/game/endings/::1722172626
+::res://scenes/game/endings/McDonald/::1722172626
+::res://scenes/game/search_forest/::1722193068
+scaryforest.gd::GDScript::-1::1722193068::0::1::::<>Node2D<>::
+scaryforest.tscn::PackedScene::7402303697342517275::1722193068::0::1::::<><>::res://scenes/game/search_forest/scaryforest.gd<>uid://dxcl4a8047r7o::::res://sounds/Walking In Forest.mp3<>uid://b6rf0ra2ivj6::::res://sounds/Forest Night After The Storm.mp3
+::res://scripts/::1722187792
+intro.gd::GDScript::-1::1722183616::0::1::::<>Node2D<>::
+main_screen.gd::GDScript::-1::1722179644::0::1::::<>Control<>::
+nameperks.gd::GDScript::-1::1722187792::0::1::::<>Node2D<>::
 settings.gd::GDScript::-1::1721984060::0::1::::<>Node2D<>::
-settings.tscn::PackedScene::7004590861246554775::1721986443::0::1::::<><>::uid://bggmb4bl8t5tp::::res://images/hamburger.jpg<>res://scenes/settings.gd<>uid://rp6th85jiqhk::::res://sounds/Bruh sound effect.mp3
-::res://scenes/game/::1721986443
-front_restaurant_1.tscn::PackedScene::9175335559792502852::1721986443::0::1::::<><>::
-::res://scripts/::1721676586
-::res://sounds/::1721986420
+::res://singleton/::1722193068
+Global.gd::GDScript::-1::1722193068::0::1::::<>Node<>::
+::res://sounds/::1722191853
 Bruh sound effect.mp3::AudioStreamMP3::1226092585034820232::1720981359::1721986420::1::::<><>::
+Forest Night After The Storm.mp3::AudioStreamMP3::135227011242288597::1722191834::1722191853::1::::<><>::
 Restaurant_Ambience _Sound_Effect.mp3::AudioStreamMP3::3757585207883638573::1721679314::1721679321::1::::<><>::
+Walking In Forest.mp3::AudioStreamMP3::8778453937360304194::1722186112::1722186134::1::::<><>::

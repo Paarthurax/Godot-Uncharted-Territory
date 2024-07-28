@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://csij2pmllyhna"]
+
+[ext_resource type="Texture2D" uid="uid://n4qqc0lmplkh" path="res://images/background/mcdonalds.jpg" id="1_4xvdr"]
+[ext_resource type="Script" path="res://scripts/intro.gd" id="1_ne4sy"]
+[ext_resource type="Texture2D" uid="uid://bo10s4mvrl2iy" path="res://images/characters/black-cat-png-cute-cat-transparent.png" id="3_v48g4"]
+
+[node name="Intro" type="Node2D"]
+script = ExtResource("1_ne4sy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.637843, 0.637843, 0.637843, 1)
+position = Vector2(578, 324)
+scale = Vector2(1.00436, 0.844241)
+texture = ExtResource("1_4xvdr")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 1152.0
+offset_bottom = 327.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 44
+text = "So you want to go to McDonald's to taste the new
+Zimburger at almost midnight, but Zimba has built a
+forest between you and it. Why, you ask? Anything to
+procrastinate making content. Anyway, grab a perk
+and navigate yourself through the Uncharted Territory
+to get to that delicious special burger with at least 5
+dollars. Unlock the special ending when you complete 
+the game with all three perks."
+horizontal_alignment = 1
+
+[node name="Back" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 50)
+offset_left = 416.0
+offset_top = 520.0
+offset_right = 744.0
+offset_bottom = 618.0
+theme_override_font_sizes/font_size = 29
+text = "Back"
+
+[node name="Cat" type="Sprite2D" parent="."]
+position = Vector2(831, 696)
+rotation = -0.0837758
+texture = ExtResource("3_v48g4")
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

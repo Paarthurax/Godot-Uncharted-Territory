@@ -14,3 +14,11 @@ config/name="Uncharted Territory"
 run/main_scene="res://scenes/main_screen.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://singleton/Global.gd"
+
+[display]
+
+window/subwindows/embed_subwindows=false

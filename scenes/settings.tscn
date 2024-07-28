@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c62ct83y2kfln"]
 
-[ext_resource type="Texture2D" uid="uid://bggmb4bl8t5tp" path="res://images/hamburger.jpg" id="1_nwgqx"]
-[ext_resource type="Script" path="res://scenes/settings.gd" id="1_ufmyw"]
+[ext_resource type="Texture2D" uid="uid://bggmb4bl8t5tp" path="res://images/background/hamburger.jpg" id="1_nwgqx"]
+[ext_resource type="Script" path="res://scripts/settings.gd" id="1_ufmyw"]
 [ext_resource type="AudioStream" uid="uid://rp6th85jiqhk" path="res://sounds/Bruh sound effect.mp3" id="3_8elyp"]
 
 [node name="Settings" type="Node2D"]

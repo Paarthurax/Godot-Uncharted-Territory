@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3yuo3f5458s3"]
+
+[ext_resource type="Script" path="res://scripts/nameperks.gd" id="1_0juc4"]
+[ext_resource type="Texture2D" uid="uid://dmxhitqjqv6uo" path="res://images/background/sundown_in_the_forest.jpg" id="2_5g83f"]
+
+[sub_resource type="GDScript" id="GDScript_12p26"]
+script/source = "extends VBoxContainer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_6f8gd"]
+
+[node name="Enter" type="Node2D"]
+script = ExtResource("1_0juc4")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(579, 327)
+scale = Vector2(0.977599, 0.957101)
+texture = ExtResource("2_5g83f")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+anchors_preset = -1
+offset_left = 492.0
+offset_top = 57.0
+offset_right = 672.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(1, 1, 1, 1)
+placeholder_text = "Type here your name"
+
+[node name="Continue" type="Button" parent="."]
+offset_left = 500.0
+offset_top = 393.0
+offset_right = 660.0
+offset_bottom = 453.0
+text = "Enter the forest"
+
+[node name="Back" type="Button" parent="."]
+offset_left = 500.0
+offset_top = 484.0
+offset_right = 660.0
+offset_bottom = 544.0
+theme_override_font_sizes/font_size = 17
+text = "Back"
+
+[node name="ChoiceContainer" type="VBoxContainer" parent="."]
+offset_left = 500.0
+offset_top = 160.0
+offset_right = 633.0
+offset_bottom = 261.0
+script = SubResource("GDScript_12p26")
+
+[node name="Bone B Gun" type="CheckBox" parent="ChoiceContainer"]
+editor_description = "You get a gun (you can only shoot at creatures)"
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+button_pressed = true
+button_group = SubResource("ButtonGroup_6f8gd")
+text = "Bone B Gun"
+
+[node name="Hell Ygar Skill" type="CheckBox" parent="ChoiceContainer"]
+editor_description = "No locks, no problem"
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+button_group = SubResource("ButtonGroup_6f8gd")
+text = "Hell Ygar Skill"
+
+[node name="Koo Pa Coin" type="CheckBox" parent="ChoiceContainer"]
+editor_description = "You start with 5000 dollars"
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+button_group = SubResource("ButtonGroup_6f8gd")
+text = "Koo Pa Coin"
+
+[node name="info_label" type="Label" parent="."]
+offset_left = 305.0
+offset_top = 318.0
+offset_right = 854.0
+offset_bottom = 390.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "\"Bone B Gun\": \"You get a gun (you can shoot up to 3 creatures)\""
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
