@@ -55,4 +55,21 @@ func _on_continue_pressed():
 	else:
 		Global.has_gun = true
 		Global.perk = "Bone B Gun"
+	if($Name.text == ""):
+		Global.namePlayer = "The one with no name"
+	else:
+		Global.namePlayer = $Name.text
 	get_tree().change_scene_to_file("res://scenes/game/search_forest/scaryforest.tscn")
+
+
+func _on_name_text_changed():
+	var cursor_position = $Name.get_caret_column()
+	var line_position = $Name.get_caret_line()
+	
+	
+	if $Name.get_text().length() > 18:
+		var text = $Name.text.substr(0, 18)
+		$Name.text = text
+		$Name.set_caret_column(18)
+		$Name.set_caret_line(18)
+		 

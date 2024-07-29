@@ -1,8 +1,8 @@
-Button
-Sprite2D
-AudioStreamPlayer
-ColorRect
 Label
+Button
+AudioStreamPlayer
+Sprite2D
+ColorRect
 Popup
 Camera2D
 PopupPanel

@@ -5,14 +5,16 @@ extends Node2D
 @onready var background: Sprite2D = $Background
 
 static var forest_walk := 0
-static var events := 0
 
 func _ready():
 	Global.current_scene = ""
 	forestPlayer.play()
 	forest_walk += 1
-	print(Global.perk)
-	randomBackground()
+	print(str(Global.encounters.size()))
+	if(Global.encounters.size() < 3):
+		randomBackground()
+	else:
+		print("Exit to McDonald's")
 	play_last_seconds(3)
 
 func play_last_seconds(seconds: float):
@@ -80,7 +82,7 @@ func FourToFive():
 		print("Load a new scene")
 		# Reset forest_walk and load a new scene
 		forest_walk = 0
-		get_tree().change_scene_to_file("res://scenes/game/encounters/casino/casino_slot.tscn")  # Update with your actual new scene path
+		get_tree().change_scene_to_file("res://scenes/game/encounters/encounter_1.tscn")  # Update with your actual new scene path
 	else:
 		forest_walk += 1
 		randomBackground()
