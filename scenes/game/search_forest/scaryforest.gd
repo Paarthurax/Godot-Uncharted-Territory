@@ -27,8 +27,8 @@ func play_last_seconds(seconds: float):
 	var start_position = total_length - duration_to_play_from_end
 	
 	streamPlayer.stop()  # Ensure the player is stopped before seeking
-	streamPlayer.seek(start_position)
 	streamPlayer.play()
+	streamPlayer.seek(start_position)
 
 func randomBackground():
 	var new_background_name = ""
@@ -97,5 +97,6 @@ func _on_button_pressed():
 		FourToFive()
 	else:
 		forest_walk += 1
+		play_last_seconds(3)
 		randomBackground()
 		randomArrows()

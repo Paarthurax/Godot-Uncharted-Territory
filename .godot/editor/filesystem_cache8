@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722244384
+::res://::1722288718
 icon.svg::CompressedTexture2D::2187775834378430530::1721676520::1721676526::1::::<><>::
 README.md::TextFile::-1::1721679913::0::1::::<><>::
 ::res://images/::1722193250
@@ -10,9 +10,12 @@ mcdonalds.jpg::CompressedTexture2D::973322110932135263::1722178788::1722178804::
 sundown_in_the_forest.jpg::CompressedTexture2D::8049449191471356538::1722177809::1722177809::1::::<><>::
 ::res://images/characters/::1722239835
 black-cat-png-cute-cat-transparent.png::CompressedTexture2D::3424289928032690972::1722180525::1722180528::1::::<><>::
-::res://images/characters/casino_encounter_1/::1722239934
+::res://images/characters/casino_encounter_1/::1722285098
 golden-blank-slot-machine-and-slots-game-coins-explosion.png::CompressedTexture2D::502537821008128596::1722239787::1722239835::1::::<><>::
-Lucky_7.png::CompressedTexture2D::96583748293592945::1722239934::1722239934::1::::<><>::
+::res://images/characters/casino_encounter_1/symbols/::1722288718
+cherry-logo-icon.png::CompressedTexture2D::7513212611606408671::1722285114::1722285115::1::::<><>::
+diamond-icon.png::CompressedTexture2D::7826827636868610943::1722285424::1722285425::1::::<><>::
+lucky-7-icon.png::CompressedTexture2D::96583748293592945::1722239934::1722288718::1::::<><>::
 ::res://images/direction/::1722193250
 orange-right-arrow.png::CompressedTexture2D::6940526123409681049::1722193246::1722193250::1::::<><>::
 ::res://images/forest/::1722192114
@@ -23,14 +26,14 @@ unsettling_forest_4.jpg::CompressedTexture2D::4328310311763580246::1722192092::1
 unsettling_forest_5.jpg::CompressedTexture2D::5447491377294833206::1722192092::1722192113::1::::<><>::
 unsettling_forest_6.jpg::CompressedTexture2D::7164924500653608595::1722192092::1722192114::1::::<><>::
 unsettling_forest_7.jpg::CompressedTexture2D::989137794170457530::1722192092::1722192113::1::::<><>::
-::res://scenes/::1722245309
-intro.tscn::PackedScene::6053351051176939942::1722245309::0::1::::<><>::uid://n4qqc0lmplkh::::res://images/background/mcdonalds.jpg<>res://scripts/intro.gd<>uid://bo10s4mvrl2iy::::res://images/characters/black-cat-png-cute-cat-transparent.png
-main_screen.tscn::PackedScene::2022162334360007896::1722245309::0::1::::<><>::res://scripts/main_screen.gd<>uid://bggmb4bl8t5tp::::res://images/background/hamburger.jpg<>uid://btsg45tkgvq8d::::res://sounds/Restaurant_Ambience _Sound_Effect.mp3
+::res://scenes/::1722288338
+intro.tscn::PackedScene::6053351051176939942::1722288338::0::1::::<><>::uid://n4qqc0lmplkh::::res://images/background/mcdonalds.jpg<>res://scripts/intro.gd<>uid://bo10s4mvrl2iy::::res://images/characters/black-cat-png-cute-cat-transparent.png
+main_screen.tscn::PackedScene::2022162334360007896::1722288337::0::1::::<><>::res://scripts/main_screen.gd<>uid://bggmb4bl8t5tp::::res://images/background/hamburger.jpg<>uid://btsg45tkgvq8d::::res://sounds/Restaurant_Ambience _Sound_Effect.mp3
 settings.tscn::PackedScene::7004590861246554775::1722182351::0::1::::<><>::uid://bggmb4bl8t5tp::::res://images/background/hamburger.jpg<>res://scripts/settings.gd<>uid://rp6th85jiqhk::::res://sounds/Bruh sound effect.mp3
-::res://scenes/game/::1722245309
-nameperks.tscn::PackedScene::9175335559792502852::1722245309::0::1::::<><>::res://scripts/nameperks.gd<>uid://dmxhitqjqv6uo::::res://images/background/sundown_in_the_forest.jpg
-::res://scenes/game/encounters/::1722245309
-encounter_1.tscn::PackedScene::2222559867232346142::1722245309::0::1::::<><>::uid://db3s5porrsgif::::res://images/background/encounter_background.jpg<>res://scripts/encounter_1.gd<>uid://hfoyvrmqnih5::::res://images/characters/casino_encounter_1/golden-blank-slot-machine-and-slots-game-coins-explosion.png<>uid://bm1yqtwmryf6::::res://images/characters/casino_encounter_1/Lucky_7.png<>uid://bo10s4mvrl2iy::::res://images/characters/black-cat-png-cute-cat-transparent.png<>uid://cnm7r4klct3ft::::res://sounds/Coins Drop Sound Effect (HD).mp3
+::res://scenes/game/::1722288338
+nameperks.tscn::PackedScene::9175335559792502852::1722288338::0::1::::<><>::res://scripts/nameperks.gd<>uid://dmxhitqjqv6uo::::res://images/background/sundown_in_the_forest.jpg
+::res://scenes/game/encounters/::1722288718
+encounter_1.tscn::PackedScene::2222559867232346142::1722288718::0::1::::<><>::uid://db3s5porrsgif::::res://images/background/encounter_background.jpg<>res://scripts/encounter_1.gd<>uid://hfoyvrmqnih5::::res://images/characters/casino_encounter_1/golden-blank-slot-machine-and-slots-game-coins-explosion.png<>uid://bm1yqtwmryf6::::res://images/characters/casino_encounter_1/symbols/lucky-7-icon.png<>uid://bo10s4mvrl2iy::::res://images/characters/black-cat-png-cute-cat-transparent.png<>uid://c7jbumpbtx7b6::::res://sounds/Lets Go Gambling.mp3
 ::res://scenes/game/encounters/casino/::1722238992
 ::res://scenes/game/encounters/koopa/::1722171776
 ::res://scenes/game/encounters/landmark/::1722171769
@@ -39,11 +42,11 @@ encounter_1.tscn::PackedScene::2222559867232346142::1722245309::0::1::::<><>::ui
 ::res://scenes/game/encounters/zimba/::1722172617
 ::res://scenes/game/endings/::1722172626
 ::res://scenes/game/endings/McDonald/::1722172626
-::res://scenes/game/search_forest/::1722245309
-scaryforest.gd::GDScript::-1::1722244328::0::1::::<>Node2D<>::
-scaryforest.tscn::PackedScene::7402303697342517275::1722245309::0::1::::<><>::res://scenes/game/search_forest/scaryforest.gd<>uid://dxcl4a8047r7o::::res://sounds/Walking In Forest.mp3<>uid://b6rf0ra2ivj6::::res://sounds/Forest Night After The Storm.mp3<>uid://dcpv581gkk0ct::::res://images/forest/unsettling_forest_2.jpg<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png
-::res://scripts/::1722245306
-encounter_1.gd::GDScript::-1::1722245306::0::1::::<>Node2D<>::
+::res://scenes/game/search_forest/::1722288338
+scaryforest.gd::GDScript::-1::1722283958::0::1::::<>Node2D<>::
+scaryforest.tscn::PackedScene::7402303697342517275::1722288338::0::1::::<><>::res://scenes/game/search_forest/scaryforest.gd<>uid://dxcl4a8047r7o::::res://sounds/Walking In Forest.mp3<>uid://b6rf0ra2ivj6::::res://sounds/Forest Night After The Storm.mp3<>uid://dcpv581gkk0ct::::res://images/forest/unsettling_forest_2.jpg<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png
+::res://scripts/::1722288718
+encounter_1.gd::GDScript::-1::1722288718::0::1::::<>Node2D<>::
 intro.gd::GDScript::-1::1722183616::0::1::::<>Node2D<>::
 main_screen.gd::GDScript::-1::1722179644::0::1::::<>Control<>::
 nameperks.gd::GDScript::-1::1722243423::0::1::::<>Node2D<>::

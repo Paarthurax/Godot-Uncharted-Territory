@@ -1,3 +1,4 @@
+TextEdit
 Label
 Button
 AudioStreamPlayer
@@ -9,6 +10,5 @@ PopupPanel
 VBoxContainer
 CenterContainer
 CheckBox
-TextEdit
 HBoxContainer
 HSlider

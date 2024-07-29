@@ -31,18 +31,24 @@ offset_left = 968.0
 offset_top = 451.0
 offset_right = 1068.0
 offset_bottom = 551.0
+focus_mode = 0
+flat = true
 
 [node name="Left" type="Button" parent="."]
 offset_left = 82.0
 offset_top = 450.0
 offset_right = 182.0
 offset_bottom = 550.0
+focus_mode = 0
+flat = true
 
 [node name="Straight" type="Button" parent="."]
 offset_left = 515.0
 offset_top = 430.0
 offset_right = 615.0
 offset_bottom = 530.0
+focus_mode = 0
+flat = true
 
 [node name="ArrowRight" type="Sprite2D" parent="."]
 position = Vector2(1020, 500)

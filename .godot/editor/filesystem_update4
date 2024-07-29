@@ -3,8 +3,5 @@ res://scenes/game/nameperks.tscn
 res://scenes/intro.tscn
 res://scenes/game/search_forest/scaryforest.tscn
 res://scenes/game/encounters/encounter_1.tscn
-res://scenes/game/encounters/encounter_1.gd
 res://scenes/game/search_forest/scaryforest.gd
-res://singleton/Global.gd
-res://scripts/nameperks.gd
 res://scripts/encounter_1.gd

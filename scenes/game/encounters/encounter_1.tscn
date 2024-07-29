@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://db3s5porrsgif" path="res://images/background/encounter_background.jpg" id="1_8r3yw"]
 [ext_resource type="Script" path="res://scripts/encounter_1.gd" id="1_rshki"]
 [ext_resource type="Texture2D" uid="uid://hfoyvrmqnih5" path="res://images/characters/casino_encounter_1/golden-blank-slot-machine-and-slots-game-coins-explosion.png" id="2_4sqvm"]
-[ext_resource type="Texture2D" uid="uid://bm1yqtwmryf6" path="res://images/characters/casino_encounter_1/Lucky_7.png" id="3_ilvpd"]
+[ext_resource type="Texture2D" uid="uid://bm1yqtwmryf6" path="res://images/characters/casino_encounter_1/symbols/lucky-7-icon.png" id="3_ilvpd"]
 [ext_resource type="Texture2D" uid="uid://bo10s4mvrl2iy" path="res://images/characters/black-cat-png-cute-cat-transparent.png" id="4_i3axh"]
 [ext_resource type="AudioStream" uid="uid://c7jbumpbtx7b6" path="res://sounds/Lets Go Gambling.mp3" id="6_d6vrj"]
 
@@ -25,19 +25,19 @@ position = Vector2(573, 350)
 scale = Vector2(0.816667, 0.745)
 texture = ExtResource("2_4sqvm")
 
-[node name="Lucky 7_1" type="Sprite2D" parent="."]
+[node name="Symbol_1" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(511, 364)
 scale = Vector2(0.138889, 0.203593)
 texture = ExtResource("3_ilvpd")
 
-[node name="Lucky 7_2" type="Sprite2D" parent="."]
+[node name="Symbol_2" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(575, 364)
 scale = Vector2(0.138889, 0.203593)
 texture = ExtResource("3_ilvpd")
 
-[node name="Lucky 7_3" type="Sprite2D" parent="."]
+[node name="Symbol_3" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(642, 364)
 scale = Vector2(0.138889, 0.203593)
@@ -51,12 +51,36 @@ texture = ExtResource("4_i3axh")
 
 [node name="Lucky_label" type="Label" parent="."]
 offset_right = 1154.0
-offset_bottom = 117.0
+offset_bottom = 151.0
 theme_override_colors/font_color = Color(0.957844, 0.664739, 0.0195007, 1)
 theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 54
 text = "You come across a magical slot machine.
 What do you do?"
+horizontal_alignment = 1
+
+[node name="InfotextSpin" type="Label" parent="."]
+offset_top = 176.0
+offset_right = 336.0
+offset_bottom = 327.0
+theme_override_colors/font_color = Color(0.957844, 0.664739, 0.0195007, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 25
+text = "Fill in the $ amount you 
+want to gamble with
+and pull the lever."
+horizontal_alignment = 1
+
+[node name="CurrentMoney" type="Label" parent="."]
+offset_left = 815.0
+offset_top = 176.0
+offset_right = 1151.0
+offset_bottom = 327.0
+theme_override_colors/font_color = Color(0.957844, 0.664739, 0.0195007, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 25
+text = "Current amount of money:
+$15"
 horizontal_alignment = 1
 
 [node name="ColorRect2" type="ColorRect" parent="."]
@@ -70,18 +94,19 @@ color = Color(0.932944, 0.686681, 0, 1)
 stream = ExtResource("6_d6vrj")
 
 [node name="Bet_Button" type="Button" parent="."]
-offset_left = 28.0
-offset_top = 490.0
-offset_right = 188.0
-offset_bottom = 622.0
+offset_left = 686.0
+offset_top = 264.0
+offset_right = 772.0
+offset_bottom = 396.0
+focus_mode = 0
 theme_override_colors/font_color = Color(0.956863, 0.666667, 0.0196078, 1)
 theme_override_font_sizes/font_size = 31
-text = "Bet"
+flat = true
 
 [node name="Leave" type="Button" parent="."]
-offset_left = 956.0
+offset_left = 500.0
 offset_top = 488.0
-offset_right = 1116.0
+offset_right = 660.0
 offset_bottom = 620.0
 theme_override_colors/font_color = Color(0.956863, 0.666667, 0.0196078, 1)
 theme_override_font_sizes/font_size = 31
@@ -95,5 +120,18 @@ offset_bottom = 281.0
 theme_override_colors/font_color = Color(0.733, 1.89635e-05, 1.05888e-05, 1)
 text = "By Grimm"
 
+[node name="GambleMoney" type="TextEdit" parent="."]
+offset_left = 120.0
+offset_top = 306.0
+offset_right = 196.0
+offset_bottom = 354.0
+size_flags_horizontal = 4
+theme_override_colors/background_color = Color(0.223103, 0.223103, 0.223103, 1)
+theme_override_colors/font_color = Color(0.956863, 0.666667, 0.0196078, 1)
+theme_override_colors/font_placeholder_color = Color(0.956863, 0.666667, 0.0196078, 1)
+theme_override_font_sizes/font_size = 25
+text = "1"
+
 [connection signal="pressed" from="Bet_Button" to="." method="_on_bet_button_pressed"]
 [connection signal="pressed" from="Leave" to="." method="_on_leave_pressed"]
+[connection signal="text_changed" from="GambleMoney" to="." method="_on_gamble_money_text_changed"]
