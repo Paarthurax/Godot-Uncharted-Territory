@@ -1,9 +1,9 @@
-TextEdit
 Label
-Button
-AudioStreamPlayer
 Sprite2D
 ColorRect
+TextEdit
+Button
+AudioStreamPlayer
 Popup
 Camera2D
 PopupPanel

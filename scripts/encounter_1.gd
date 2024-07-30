@@ -5,9 +5,9 @@ var elapsed_time_countdown = 2.0
 var first = true
 
 var symbol_paths = [
-	"res://images/characters/casino_encounter_1/symbols/cherry-logo-icon.png",
-	"res://images/characters/casino_encounter_1/symbols/diamond-icon.png",
-	"res://images/characters/casino_encounter_1/symbols/lucky-7-icon.png"
+	"res://images/encounters/casino_encounter_1/symbols/cherry-logo-icon.png",
+	"res://images/encounters/casino_encounter_1/symbols/diamond-icon.png",
+	"res://images/encounters/casino_encounter_1/symbols/lucky-7-icon.png"
 ]
 
 var desired_scale_normal = Vector2(0.139, 0.204)
@@ -83,10 +83,8 @@ func assign_texture_to_symbol(symbol, texture):
 
 func _on_leave_pressed():
 	Global.encounters.append("1")
+	print(str(Global.encounters))
 	get_tree().change_scene_to_file("res://scenes/game/search_forest/scaryforest.tscn")
-
-
-
 
 
 func _on_gamble_money_text_changed():

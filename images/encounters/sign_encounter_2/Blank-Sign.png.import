@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djrmyccc0mvwp"
-path="res://.godot/imported/diamond-icon.png-9ee6958522eaa4fcd325c841fde250e8.ctex"
+uid="uid://ixl73ym7eqvx"
+path="res://.godot/imported/Blank-Sign.png-be25c3d0556c48cabdef8e3d57769474.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/characters/casino_encounter_1/symbols/diamond-icon.png"
-dest_files=["res://.godot/imported/diamond-icon.png-9ee6958522eaa4fcd325c841fde250e8.ctex"]
+source_file="res://images/encounters/sign_encounter_2/Blank-Sign.png"
+dest_files=["res://.godot/imported/Blank-Sign.png-be25c3d0556c48cabdef8e3d57769474.ctex"]
 
 [params]
 

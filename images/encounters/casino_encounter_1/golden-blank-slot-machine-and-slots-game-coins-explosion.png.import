@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfbprqhaf2x2f"
-path="res://.godot/imported/cherry-logo-icon.png-3b99deed0e1e43f25bf8e24644f260a6.ctex"
+uid="uid://hfoyvrmqnih5"
+path="res://.godot/imported/golden-blank-slot-machine-and-slots-game-coins-explosion.png-68641455fee38b9d61a610c5239c0379.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/characters/casino_encounter_1/symbols/cherry-logo-icon.png"
-dest_files=["res://.godot/imported/cherry-logo-icon.png-3b99deed0e1e43f25bf8e24644f260a6.ctex"]
+source_file="res://images/encounters/casino_encounter_1/golden-blank-slot-machine-and-slots-game-coins-explosion.png"
+dest_files=["res://.godot/imported/golden-blank-slot-machine-and-slots-game-coins-explosion.png-68641455fee38b9d61a610c5239c0379.ctex"]
 
 [params]
 
