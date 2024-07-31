@@ -1,0 +1,148 @@
+[gd_scene load_steps=8 format=3 uid="uid://76y4wt4dy8p6"]
+
+[ext_resource type="Texture2D" uid="uid://db3s5porrsgif" path="res://images/background/encounter_background.jpg" id="1_1eh55"]
+[ext_resource type="Script" path="res://scripts/encounter_3.gd" id="1_w1rad"]
+[ext_resource type="Texture2D" uid="uid://cqaefkef76vja" path="res://images/characters/cloaked_figure.png" id="3_jwr5c"]
+[ext_resource type="Texture2D" uid="uid://bglp21j1yo4k5" path="res://images/characters/Cloaked_figure2.png" id="4_a7big"]
+[ext_resource type="Texture2D" uid="uid://c55bplvds7ki8" path="res://images/direction/orange-right-arrow.png" id="5_pkum4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fgavi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jwr5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_a7big")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3hilp"]
+
+[node name="Encounter3" type="Node2D"]
+script = ExtResource("1_w1rad")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 647.0
+color = Color(0, 0, 0, 1)
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(577.5, 324.5)
+scale = Vector2(1.71577, 1.6125)
+texture = ExtResource("1_1eh55")
+
+[node name="QuestionLabel" type="Label" parent="."]
+offset_right = 1154.0
+offset_bottom = 151.0
+theme_override_colors/font_color = Color(0.957844, 0.664739, 0.0195007, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 54
+text = "A thief! What are you going to do? Click on 
+him to slow him down."
+horizontal_alignment = 1
+
+[node name="ThiefText" type="Label" parent="."]
+visible = false
+offset_left = 35.0
+offset_top = 212.0
+offset_right = 456.0
+offset_bottom = 363.0
+theme_override_colors/font_color = Color(0.957844, 0.664739, 0.0195007, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 21
+text = "<What is it thou seeketh, brother?>"
+horizontal_alignment = 1
+
+[node name="Thief" type="AnimatedSprite2D" parent="."]
+position = Vector2(569, 351)
+scale = Vector2(0.0712152, 0.160417)
+sprite_frames = SubResource("SpriteFrames_fgavi")
+frame_progress = 0.631785
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="Greetings" type="Button" parent="."]
+visible = false
+offset_left = 466.0
+offset_top = 542.0
+offset_right = 706.0
+offset_bottom = 608.0
+text = "Salutari!"
+
+[node name="StopButton" type="Button" parent="."]
+offset_left = 482.0
+offset_top = 168.0
+offset_right = 676.0
+offset_bottom = 522.0
+focus_mode = 0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3hilp")
+flat = true
+
+[node name="MoveOnArrow" type="Sprite2D" parent="."]
+position = Vector2(1020, 500)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_pkum4")
+
+[node name="MoveOn" type="Button" parent="."]
+offset_left = 968.0
+offset_top = 451.0
+offset_right = 1068.0
+offset_bottom = 551.0
+focus_mode = 0
+flat = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="Wealth" type="Button" parent="."]
+visible = false
+offset_left = 25.0
+offset_top = 488.0
+offset_right = 185.0
+offset_bottom = 620.0
+theme_override_colors/font_color = Color(0.956863, 0.666667, 0.0196078, 1)
+theme_override_font_sizes/font_size = 31
+text = "Way out"
+
+[node name="Wisdom" type="Button" parent="."]
+visible = false
+offset_left = 200.0
+offset_top = 488.0
+offset_right = 360.0
+offset_bottom = 620.0
+theme_override_colors/font_color = Color(0.956863, 0.666667, 0.0196078, 1)
+theme_override_font_sizes/font_size = 31
+text = "Wisdom"
+
+[node name="Big Booty" type="Button" parent="."]
+visible = false
+offset_left = 375.0
+offset_top = 488.0
+offset_right = 535.0
+offset_bottom = 620.0
+theme_override_colors/font_color = Color(0.956863, 0.666667, 0.0196078, 1)
+theme_override_font_sizes/font_size = 31
+text = "Big Booty"
+
+[node name="Gun" type="Button" parent="."]
+visible = false
+offset_left = 550.0
+offset_top = 488.0
+offset_right = 710.0
+offset_bottom = 620.0
+theme_override_colors/font_color = Color(0.956863, 0.666667, 0.0196078, 1)
+theme_override_font_sizes/font_size = 31
+text = "Gun"
+
+[connection signal="pressed" from="Greetings" to="." method="_on_greetings_pressed"]
+[connection signal="pressed" from="StopButton" to="." method="_on_stop_button_pressed"]
+[connection signal="pressed" from="MoveOn" to="." method="_on_move_on_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Wealth" to="." method="_on_wealth_pressed"]
+[connection signal="pressed" from="Wisdom" to="." method="_on_wisdom_pressed"]
+[connection signal="pressed" from="Big Booty" to="." method="_on_big_booty_pressed"]

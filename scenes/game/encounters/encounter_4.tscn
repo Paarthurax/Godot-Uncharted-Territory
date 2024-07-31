@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhjdqgarq6wbm"]
+
+[ext_resource type="Texture2D" uid="uid://db3s5porrsgif" path="res://images/background/encounter_background.jpg" id="1_xnelx"]
+[ext_resource type="Texture2D" uid="uid://bor1ywhdgrblt" path="res://images/characters/Koopa/1200px-Bowser.webp" id="2_mns0d"]
+
+[node name="Encounter4" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 647.0
+color = Color(0, 0, 0, 1)
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(577.5, 324.5)
+scale = Vector2(1.71577, 1.6125)
+texture = ExtResource("1_xnelx")
+
+[node name="Bowser" type="Sprite2D" parent="."]
+position = Vector2(569, 331)
+scale = Vector2(0.279167, 0.306402)
+texture = ExtResource("2_mns0d")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

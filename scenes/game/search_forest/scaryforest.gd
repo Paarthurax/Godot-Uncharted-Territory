@@ -82,11 +82,13 @@ func FourToFive():
 		print("Load a new scene")
 		# Reset forest_walk and load a new scene
 		forest_walk = 0
+
 		var newEncounter = str(rand.randi_range(1, 1))
 		while(Global.encounters.find(newEncounter) != -1):
-			newEncounter = str(rand.randi_range(1, 2))
+			newEncounter = str(rand.randi_range(1, 3))
 		var newEncounterPath = "res://scenes/game/encounters/encounter_" + newEncounter + ".tscn"
-		
+		if(Global.encounters.size() >= 4):
+			newEncounterPath = "res://scenes/game/endings/LeadingUpTo.tscn"
 		get_tree().change_scene_to_file(newEncounterPath)  # Update with your actual new scene path
 	else:
 		forest_walk += 1

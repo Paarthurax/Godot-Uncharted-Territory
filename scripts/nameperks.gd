@@ -6,10 +6,11 @@ extends Node2D
 var checkbox_descriptions = {
 	"Bone B Gun": "You get a gun (you can shoot up to 3 creatures)",
 	"Hell Ygar Skill": "You can speak a cursed language",
-	"Koo Pa Coin": "You start with 5000 dollars instead of 5"
+	"Koo Pa Coin": "You start with 5000 dollars instead of 10"
 }
 
 func _ready():
+	$AudioStreamPlayer.play()
 	# Display the description of the first button initially
 	if choiceContainer.get_child_count() > 0:
 		var first_button = choiceContainer.get_child(0)
@@ -51,7 +52,7 @@ func _on_continue_pressed():
 	elif(Global.perk == "Hell Ygar Skill"):
 		Global.romanian = true
 	elif(Global.perk == "Koo Pa Coin"):
-		Global.money == 5000
+		Global.money = 5000
 	else:
 		Global.has_gun = true
 		Global.perk = "Bone B Gun"
