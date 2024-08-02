@@ -1,6 +1,8 @@
 extends Node2D
 
 @onready var _animated_sprite = $Thief
+var toggle = false
+var timesShot = 0
 var growth_speed: float = 0.1
 var original_modulate : Color
 var moving = true
@@ -27,6 +29,9 @@ func _ready():
 	_animated_sprite.play("default")
 	$MoveOn.visible = false
 	$MoveOnArrow.visible = false
+	$ThiefText.text = "<What is it thou seeketh," +  str(Global.namePlayer) + "?>"
+	if(Global.has_gun):
+		$Gun.visible = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -37,6 +42,9 @@ func _process(delta):
 		flee = false
 		moving = false
 		_animated_sprite.rotation = -30
+		Global.description = "He looked familiar"
+		Global.victim = "Here lies: Probably a thief?"
+		nextScene = "res://scenes/game/endings/Tombstone/tombstone.tscn"
 	
 	elif(click >= 20):
 		flee = true
@@ -125,7 +133,7 @@ func _on_wisdom_pressed():
 	$"Big Booty".visible = false
 	$MoveOn.visible = true
 	$MoveOnArrow.visible = true
-	$ThiefText.text =  "<Zimba can be slain. Allergic to bullets, content and clicks.>"
+	$ThiefText.text =  "<Zimba can be found behind the McDonald's with enough money.>"
 	
 func _on_big_booty_pressed():
 	$Wealth.visible = false
@@ -135,3 +143,38 @@ func _on_big_booty_pressed():
 	$MoveOnArrow.visible = true
 	Global.money += 5
 	$ThiefText.text =  "<Here! Thou now hast $" + str(Global.money) + ". What did thou expect?>"
+
+
+func _on_gun_timer_timeout():
+	$WhiteBlackScreen.visible = true
+	$AudioStreamPlayer.stream = load("res://sounds/AR-15 Sound Effect.mp3")
+	Global.description = "He looked familiar"
+	Global.victim = "Probably a thief"
+	$LightDark.start()
+
+
+func _on_light_dark_timeout():
+	$AudioStreamPlayer.play()
+	if(!toggle):
+		$WhiteBlackScreen.color = Color(1, 1, 1, 1)
+		toggle = !toggle
+	else:
+		$WhiteBlackScreen.color = Color(0, 0, 0, 1)
+		toggle = !toggle
+	if(timesShot > 6):
+		Global.encounters.append("3")
+		get_tree().change_scene_to_file("res://scenes/game/endings/Tombstone/tombstone.tscn")
+	else:
+		timesShot += 1
+		$LightDark.start()
+
+
+func _on_gun_pressed():
+	dead = true
+	$Greetings.visible = false
+	$StopButton.visible = false
+	$MoveOn.visible = false
+	$MoveOnArrow.visible = false
+	$AudioStreamPlayer.stop()
+	$GunShoot.visible = true
+	$GunTimer.start()

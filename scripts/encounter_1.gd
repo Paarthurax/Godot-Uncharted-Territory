@@ -3,7 +3,8 @@ extends Node2D
 var pressed = 0
 var elapsed_time_countdown = 2.0
 var first = true
-
+var toggle = false
+var timesShot = 0
 var symbol_paths = [
 	"res://images/encounters/casino_encounter_1/symbols/cherry-logo-icon.png",
 	"res://images/encounters/casino_encounter_1/symbols/diamond-icon.png",
@@ -18,7 +19,9 @@ func _ready():
 	$"Symbol_1".visible = false
 	$"Symbol_2".visible = false
 	$"Symbol_3".visible = false
-
+	
+	if(Global.has_gun):
+		$Gun.visible = true
 	$CurrentMoney.text = "Current amount of money:\n$" + str(Global.money)
 	if Global.money <= 0:
 		$Bet_Button.visible = false
@@ -31,9 +34,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	elapsed_time_countdown -= 0.009
-	if elapsed_time_countdown < 0:
-	# Stop the audio playback
+	if(elapsed_time_countdown > 0):
+		elapsed_time_countdown -= 0.009
+		if elapsed_time_countdown < 0:
+		# Stop the audio playback
+			$AudioStreamPlayer.stop()
+	else:
 		$AudioStreamPlayer.stop()
 func _on_bet_button_pressed():
 	pressed += 1
@@ -112,4 +118,34 @@ func _on_gamble_money_text_changed():
 	$GambleMoney.text = str(number)
 
 
+func _on_gun_pressed():
+	$Bet_Button.visible = false
+	$Leave.visible = false
+	$AudioStreamPlayer.stop()
+	$GunShoot.visible = true
+	$GunTimer.start()
 
+
+func _on_gun_timer_timeout():
+	$WhiteBlackScreen.visible = true
+	$AudioStreamPlayer.stream = load("res://sounds/AR-15 Sound Effect.mp3")
+	Global.description = "Gambling is bad"
+	Global.victim = "Grimm's Gambling Machine"
+	$LightDark.start()
+
+
+func _on_light_dark_timeout():
+	elapsed_time_countdown = 200
+	$AudioStreamPlayer.play()
+	if(!toggle):
+		$WhiteBlackScreen.color = Color(1, 1, 1, 1)
+		toggle = !toggle
+	else:
+		$WhiteBlackScreen.color = Color(0, 0, 0, 1)
+		toggle = !toggle
+	if(timesShot > 3):
+		Global.encounters.append("1")
+		get_tree().change_scene_to_file("res://scenes/game/endings/Tombstone/tombstone.tscn")
+	else:
+		timesShot += 1
+		$LightDark.start()

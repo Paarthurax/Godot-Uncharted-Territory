@@ -1,0 +1,82 @@
+[gd_scene load_steps=5 format=3 uid="uid://dk601nl7gjxnn"]
+
+[ext_resource type="Texture2D" uid="uid://dl0t80e5qoifi" path="res://images/characters/gravestone/graveyard-background.jpg" id="1_443np"]
+[ext_resource type="Script" path="res://scripts/tombstone.gd" id="1_rw8qu"]
+[ext_resource type="Texture2D" uid="uid://1comyd3gh6no" path="res://images/characters/gravestone/gravestone.png" id="2_78e1u"]
+[ext_resource type="Texture2D" uid="uid://c55bplvds7ki8" path="res://images/direction/orange-right-arrow.png" id="4_h1uqf"]
+
+[node name="Tombstone" type="Node2D"]
+script = ExtResource("1_rw8qu")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 647.0
+color = Color(0, 0, 0, 1)
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(624, 291)
+scale = Vector2(1.71577, 1.6125)
+texture = ExtResource("1_443np")
+
+[node name="Leave" type="Button" parent="."]
+visible = false
+offset_left = 500.0
+offset_top = 488.0
+offset_right = 660.0
+offset_bottom = 620.0
+theme_override_colors/font_color = Color(0.956863, 0.666667, 0.0196078, 1)
+theme_override_font_sizes/font_size = 31
+text = "Leave"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(548, 312)
+scale = Vector2(2.1704, 1.72771)
+texture = ExtResource("2_78e1u")
+
+[node name="Victim" type="Label" parent="."]
+offset_left = 388.0
+offset_top = 223.0
+offset_right = 711.0
+offset_bottom = 277.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="."]
+offset_left = 388.0
+offset_top = 294.0
+offset_right = 711.0
+offset_bottom = 317.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MoveOnArrow" type="Sprite2D" parent="."]
+position = Vector2(1020, 500)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_h1uqf")
+
+[node name="MoveOn" type="Button" parent="."]
+offset_left = 968.0
+offset_top = 451.0
+offset_right = 1068.0
+offset_bottom = 551.0
+focus_mode = 0
+flat = true
+
+[node name="Exit" type="Button" parent="."]
+visible = false
+offset_left = 82.0
+offset_top = 450.0
+offset_right = 182.0
+offset_bottom = 550.0
+focus_mode = 0
+flat = true
+
+[node name="ExitArrow" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(132, 500)
+rotation = 3.14159
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_h1uqf")
+
+[connection signal="pressed" from="MoveOn" to="." method="_on_move_on_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

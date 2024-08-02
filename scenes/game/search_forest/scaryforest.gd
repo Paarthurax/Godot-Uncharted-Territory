@@ -13,8 +13,7 @@ func _ready():
 	print(str(Global.encounters.size()))
 	if(Global.encounters.size() < 3):
 		randomBackground()
-	else:
-		print("Exit to McDonald's")
+		
 	play_last_seconds(3)
 
 func play_last_seconds(seconds: float):
@@ -78,16 +77,16 @@ func FourToFive():
 	var rand = RandomNumberGenerator.new()
 	rand.randomize()
 
-	if rand.randf() < 0.5 or forest_walk >= 5:
+	if rand.randf() < 0.5 or forest_walk >= 5 or Global.encounters.size() >= 3:
 		print("Load a new scene")
 		# Reset forest_walk and load a new scene
 		forest_walk = 0
 
 		var newEncounter = str(rand.randi_range(1, 1))
 		while(Global.encounters.find(newEncounter) != -1):
-			newEncounter = str(rand.randi_range(1, 3))
+			newEncounter = str(rand.randi_range(1, 4))
 		var newEncounterPath = "res://scenes/game/encounters/encounter_" + newEncounter + ".tscn"
-		if(Global.encounters.size() >= 4):
+		if(Global.encounters.size() >= 3):
 			newEncounterPath = "res://scenes/game/endings/LeadingUpTo.tscn"
 		get_tree().change_scene_to_file(newEncounterPath)  # Update with your actual new scene path
 	else:

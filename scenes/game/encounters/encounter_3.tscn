@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://76y4wt4dy8p6"]
+[gd_scene load_steps=9 format=3 uid="uid://76y4wt4dy8p6"]
 
 [ext_resource type="Texture2D" uid="uid://db3s5porrsgif" path="res://images/background/encounter_background.jpg" id="1_1eh55"]
 [ext_resource type="Script" path="res://scripts/encounter_3.gd" id="1_w1rad"]
-[ext_resource type="Texture2D" uid="uid://cqaefkef76vja" path="res://images/characters/cloaked_figure.png" id="3_jwr5c"]
-[ext_resource type="Texture2D" uid="uid://bglp21j1yo4k5" path="res://images/characters/Cloaked_figure2.png" id="4_a7big"]
+[ext_resource type="Texture2D" uid="uid://cqaefkef76vja" path="res://images/characters/Yell/cloaked_figure.png" id="3_jwr5c"]
+[ext_resource type="Texture2D" uid="uid://bglp21j1yo4k5" path="res://images/characters/Yell/Cloaked_figure2.png" id="4_a7big"]
 [ext_resource type="Texture2D" uid="uid://c55bplvds7ki8" path="res://images/direction/orange-right-arrow.png" id="5_pkum4"]
+[ext_resource type="Texture2D" uid="uid://ciwblh6t6lrwm" path="res://images/characters/gun/mp5-assault-rifle.webp" id="6_6ediw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fgavi"]
 animations = [{
@@ -42,7 +43,7 @@ theme_override_colors/font_color = Color(0.957844, 0.664739, 0.0195007, 1)
 theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 54
 text = "A thief! What are you going to do? Click on 
-him to slow him down."
+him to hurt him."
 horizontal_alignment = 1
 
 [node name="ThiefText" type="Label" parent="."]
@@ -54,7 +55,6 @@ offset_bottom = 363.0
 theme_override_colors/font_color = Color(0.957844, 0.664739, 0.0195007, 1)
 theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 21
-text = "<What is it thou seeketh, brother?>"
 horizontal_alignment = 1
 
 [node name="Thief" type="AnimatedSprite2D" parent="."]
@@ -71,6 +71,7 @@ offset_left = 466.0
 offset_top = 542.0
 offset_right = 706.0
 offset_bottom = 608.0
+theme_override_font_sizes/font_size = 31
 text = "Salutari!"
 
 [node name="StopButton" type="Button" parent="."]
@@ -139,6 +140,28 @@ theme_override_colors/font_color = Color(0.956863, 0.666667, 0.0196078, 1)
 theme_override_font_sizes/font_size = 31
 text = "Gun"
 
+[node name="GunTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="GunShoot" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(572, 375)
+scale = Vector2(1.25741, 1.51944)
+texture = ExtResource("6_6ediw")
+
+[node name="LightDark" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+
+[node name="WhiteBlackScreen" type="ColorRect" parent="."]
+visible = false
+offset_right = 1152.0
+offset_bottom = 647.0
+color = Color(0, 0, 0, 1)
+
 [connection signal="pressed" from="Greetings" to="." method="_on_greetings_pressed"]
 [connection signal="pressed" from="StopButton" to="." method="_on_stop_button_pressed"]
 [connection signal="pressed" from="MoveOn" to="." method="_on_move_on_pressed"]
@@ -146,3 +169,6 @@ text = "Gun"
 [connection signal="pressed" from="Wealth" to="." method="_on_wealth_pressed"]
 [connection signal="pressed" from="Wisdom" to="." method="_on_wisdom_pressed"]
 [connection signal="pressed" from="Big Booty" to="." method="_on_big_booty_pressed"]
+[connection signal="pressed" from="Gun" to="." method="_on_gun_pressed"]
+[connection signal="timeout" from="GunTimer" to="." method="_on_gun_timer_timeout"]
+[connection signal="timeout" from="LightDark" to="." method="_on_light_dark_timeout"]

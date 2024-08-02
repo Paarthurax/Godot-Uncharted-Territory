@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://d3yuo3f5458s3"]
+[gd_scene load_steps=7 format=3 uid="uid://d3yuo3f5458s3"]
 
 [ext_resource type="Script" path="res://scripts/nameperks.gd" id="1_0juc4"]
 [ext_resource type="Texture2D" uid="uid://dmxhitqjqv6uo" path="res://images/background/sundown_in_the_forest.jpg" id="2_5g83f"]
 [ext_resource type="AudioStream" uid="uid://xtchiwfxn0et" path="res://sounds/bird sound effect.mp3" id="3_34i6o"]
+[ext_resource type="Texture2D" uid="uid://305vi1x53h3r" path="res://images/direction/green-checkmark.webp" id="4_1svpg"]
 
 [sub_resource type="GDScript" id="GDScript_12p26"]
 script/source = "extends VBoxContainer
@@ -94,6 +95,24 @@ horizontal_alignment = 1
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_34i6o")
 volume_db = -12.0
+
+[node name="Checkmark1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(700, 177)
+scale = Vector2(0.193333, 0.195)
+texture = ExtResource("4_1svpg")
+
+[node name="Checkmark2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(700, 220)
+scale = Vector2(0.193333, 0.195)
+texture = ExtResource("4_1svpg")
+
+[node name="Checkmark3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(698, 263)
+scale = Vector2(0.193333, 0.195)
+texture = ExtResource("4_1svpg")
 
 [connection signal="text_changed" from="Name" to="." method="_on_name_text_changed"]
 [connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]

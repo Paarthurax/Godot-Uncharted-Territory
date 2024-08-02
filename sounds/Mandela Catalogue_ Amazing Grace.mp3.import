@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cyrs64l1liqn"
+path="res://.godot/imported/Mandela Catalogue_ Amazing Grace.mp3-8cc59490f840d680fa7b8ec10a5275d8.mp3str"
+
+[deps]
+
+source_file="res://sounds/Mandela Catalogue_ Amazing Grace.mp3"
+dest_files=["res://.godot/imported/Mandela Catalogue_ Amazing Grace.mp3-8cc59490f840d680fa7b8ec10a5275d8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

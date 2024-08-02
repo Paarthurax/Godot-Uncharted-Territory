@@ -1,10 +1,10 @@
-AudioStreamPlayer
 Sprite2D
-ColorRect
-Timer
+AudioStreamPlayer
 Button
-AnimatedSprite2D
 Label
+Timer
+ColorRect
+AnimatedSprite2D
 TextEdit
 Popup
 Camera2D

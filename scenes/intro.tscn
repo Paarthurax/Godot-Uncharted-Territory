@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://n4qqc0lmplkh" path="res://images/background/mcdonalds.jpg" id="1_4xvdr"]
 [ext_resource type="Script" path="res://scripts/intro.gd" id="1_ne4sy"]
-[ext_resource type="Texture2D" uid="uid://bo10s4mvrl2iy" path="res://images/characters/black-cat-png-cute-cat-transparent.png" id="3_v48g4"]
+[ext_resource type="Texture2D" uid="uid://bo10s4mvrl2iy" path="res://images/characters/Zimba/black-cat-png-cute-cat-transparent.png" id="3_v48g4"]
 
 [node name="Intro" type="Node2D"]
 script = ExtResource("1_ne4sy")
@@ -26,9 +26,8 @@ Zimburger at almost midnight, but Zimba has built a
 forest between you and it. Why, you ask? Anything to
 procrastinate making content. Anyway, grab a perk
 and navigate yourself through the Uncharted Territory
-to get to that delicious special burger with at least 5
-dollars. Unlock the special ending when you complete 
-the game with all three perks."
+to get to that delicious special burger with at least 10
+dollars. "
 horizontal_alignment = 1
 
 [node name="Back" type="Button" parent="."]

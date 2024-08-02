@@ -1,32 +1,59 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722451221
+::res://::1722619846
 icon.svg::CompressedTexture2D::2187775834378430530::1721676520::1721676526::1::::<><>::
 README.md::TextFile::-1::1721679913::0::1::::<><>::
 ::res://images/::1722336886
-::res://images/background/::1722442937
+::res://images/background/::1722620493
 background_yell.png::CompressedTexture2D::357653707494880445::1722442921::1722442937::1::::<><>::
+behind mcdonalds.jpg::CompressedTexture2D::1240239052099197087::1722620490::1722620493::1::::<><>::
 encounter_background.jpg::CompressedTexture2D::7288400761791301101::1722239290::1722239290::1::::<><>::
+fire_background.jpg::CompressedTexture2D::4219408952076838127::1722519130::1722519143::1::::<><>::
 hamburger.jpg::CompressedTexture2D::2820671927019385941::1721676914::1722177737::1::::<><>::
+mcdonalds inside.jpg::CompressedTexture2D::7250768434576039412::1722618343::1722618344::1::::<><>::
 mcdonalds.jpg::CompressedTexture2D::973322110932135263::1722178788::1722178804::1::::<><>::
 sundown_in_the_forest.jpg::CompressedTexture2D::8049449191471356538::1722177809::1722177809::1::::<><>::
-::res://images/characters/::1722451221
-black-cat-png-cute-cat-transparent.png::CompressedTexture2D::3424289928032690972::1722180525::1722180528::1::::<><>::
-Cloaked_figure2.png::CompressedTexture2D::2831222252867202774::1722417476::1722417476::1::::<><>::
-Cloaked_figure Animation.png::CompressedTexture2D::8269108240077998275::1722417394::1722417395::1::::<><>::
-cloaked_figure.png::CompressedTexture2D::5896115194219212574::1722416269::1722416278::1::::<><>::
-mp5-assault-rifle.webp::CompressedTexture2D::5379849204263036708::1722448842::1722448842::1::::<><>::
-::res://images/characters/Koopa/::1722451221
+::res://images/characters/::1722619846
+::res://images/characters/gravestone/::1722600283
+gravestone.png::CompressedTexture2D::1829911423997888796::1722600234::1722600234::1::::<><>::
+graveyard-background.jpg::CompressedTexture2D::7984162649658553218::1722600283::1722600283::1::::<><>::
+::res://images/characters/gun/::1722601777
+mp5-assault-rifle.webp::CompressedTexture2D::5379849204263036708::1722448842::1722601777::1::::<><>::
+::res://images/characters/Jaiklay/::1722619902
+Blob_07.webp::CompressedTexture2D::2807095353679201788::1722619902::1722619902::1::::<><>::
+Squirrel-PNG.png::CompressedTexture2D::3774364958160644136::1722619843::1722619846::1::::<><>::
+::res://images/characters/Koopa/::1722518970
 1200px-Bowser.webp::CompressedTexture2D::3405781583782544277::1722451104::1722451218::1::::<><>::
-SSBU_BOWSER_PORTRAIT.png::CompressedTexture2D::6226642302411196829::1722451201::1722451221::1::::<><>::
-::res://images/direction/::1722193250
+bowser.png::CompressedTexture2D::6226642302411196829::1722451201::1722518970::1::::<><>::
+dfjv4k2-5846ff0b-eff5-457e-a2d5-24b9a53da1e8.png::CompressedTexture2D::1998217730333044222::1722507571::1722507572::1::::<><>::
+::res://images/characters/Mostdeaf/::1722593907
+buff arm.png::CompressedTexture2D::7836561042113616272::1722593907::1722593907::1::::<><>::
+wood-chipper.png::CompressedTexture2D::1843792088042955090::1722593851::1722593854::1::::<><>::
+::res://images/characters/Paarthurax/::1722597824
+kirby sad.png::CompressedTexture2D::8706264383513752381::1722594523::1722594523::1::::<><>::
+kirby-gun.png::CompressedTexture2D::8209925577242198177::1722597824::1722597824::1::::<><>::
+Kirby-happy.png::CompressedTexture2D::931141501008303355::1722597725::1722597726::1::::<><>::
+::res://images/characters/Yell/::1722548865
+Cloaked_figure2.png::CompressedTexture2D::2831222252867202774::1722417476::1722548857::1::::<><>::
+Cloaked_figure Animation.png::CompressedTexture2D::8269108240077998275::1722417394::1722548861::1::::<><>::
+cloaked_figure.png::CompressedTexture2D::5896115194219212574::1722416269::1722548865::1::::<><>::
+::res://images/characters/Zimba/::1722618571
+black-cat-png-cute-cat-transparent.png::CompressedTexture2D::3424289928032690972::1722180525::1722548888::1::::<><>::
+delicious-cheese-burger-on-transparent-background-png.webp::CompressedTexture2D::1900364033543330044::1722618571::1722618571::1::::<><>::
+Zimba transparent.png::CompressedTexture2D::970189821201709598::1722548894::1722548894::1::::<><>::
+::res://images/direction/::1722621027
+green-checkmark.webp::CompressedTexture2D::2018756538609328261::1722621027::1722621027::1::::<><>::
 orange-right-arrow.png::CompressedTexture2D::6940526123409681049::1722193246::1722193250::1::::<><>::
-::res://images/encounters/::1722345265
+::res://images/encounters/::1722611430
 ::res://images/encounters/casino_encounter_1/::1722336907
 golden-blank-slot-machine-and-slots-game-coins-explosion.png::CompressedTexture2D::502537821008128596::1722239787::1722336907::1::::<><>::
 ::res://images/encounters/casino_encounter_1/symbols/::1722336908
 cherry-logo-icon.png::CompressedTexture2D::7513212611606408671::1722285114::1722336908::1::::<><>::
 diamond-icon.png::CompressedTexture2D::7826827636868610943::1722285424::1722336908::1::::<><>::
 lucky-7-icon.png::CompressedTexture2D::96583748293592945::1722239934::1722336907::1::::<><>::
+::res://images/encounters/LeadingUpTo/::1722611444
+JoshuaDudleyGreer_10.webp::CompressedTexture2D::3548302680441567016::1722611442::1722611443::1::::<><>::
+McDonald's.webp::CompressedTexture2D::6959293483438911040::1722611442::1722611442::1::::<><>::
+path-is-a-dirt-road-that-leads-up-the-hill-straight-ahead-background-of-two-side-with-bamboo-and-banana-trees-and-blurred-of-green-forest-free-photo.jpg::CompressedTexture2D::9183995718029100011::1722611442::1722611444::1::::<><>::
 ::res://images/encounters/sign_encounter_2/::1722346084
 Blank-Sign.png::CompressedTexture2D::609717978090296001::1722346084::1722346084::1::::<><>::
 ::res://images/forest/::1722192114
@@ -37,48 +64,64 @@ unsettling_forest_4.jpg::CompressedTexture2D::4328310311763580246::1722192092::1
 unsettling_forest_5.jpg::CompressedTexture2D::5447491377294833206::1722192092::1722192113::1::::<><>::
 unsettling_forest_6.jpg::CompressedTexture2D::7164924500653608595::1722192092::1722192114::1::::<><>::
 unsettling_forest_7.jpg::CompressedTexture2D::989137794170457530::1722192092::1722192113::1::::<><>::
-::res://scenes/::1722450792
-intro.tscn::PackedScene::6053351051176939942::1722450792::0::1::::<><>::uid://n4qqc0lmplkh::::res://images/background/mcdonalds.jpg<>res://scripts/intro.gd<>uid://bo10s4mvrl2iy::::res://images/characters/black-cat-png-cute-cat-transparent.png
-main_screen.tscn::PackedScene::2022162334360007896::1722450792::0::1::::<><>::res://scripts/main_screen.gd<>uid://bggmb4bl8t5tp::::res://images/background/hamburger.jpg<>uid://btsg45tkgvq8d::::res://sounds/Restaurant_Ambience _Sound_Effect.mp3
+::res://scenes/::1722620630
+intro.tscn::PackedScene::6053351051176939942::1722548887::0::1::::<><>::uid://n4qqc0lmplkh::::res://images/background/mcdonalds.jpg<>res://scripts/intro.gd<>uid://bo10s4mvrl2iy::::res://images/characters/Zimba/black-cat-png-cute-cat-transparent.png
+main_screen.tscn::PackedScene::2022162334360007896::1722620630::0::1::::<><>::res://scripts/main_screen.gd<>uid://bggmb4bl8t5tp::::res://images/background/hamburger.jpg<>uid://btsg45tkgvq8d::::res://sounds/Restaurant_Ambience _Sound_Effect.mp3
 settings.tscn::PackedScene::7004590861246554775::1722182351::0::1::::<><>::uid://bggmb4bl8t5tp::::res://images/background/hamburger.jpg<>res://scripts/settings.gd<>uid://rp6th85jiqhk::::res://sounds/Bruh sound effect.mp3
-::res://scenes/game/::1722450792
-nameperks.tscn::PackedScene::9175335559792502852::1722450792::0::1::::<><>::res://scripts/nameperks.gd<>uid://dmxhitqjqv6uo::::res://images/background/sundown_in_the_forest.jpg<>uid://xtchiwfxn0et::::res://sounds/bird sound effect.mp3
-::res://scenes/game/encounters/::1722451218
-encounter_1.tscn::PackedScene::2222559867232346142::1722450792::0::1::::<><>::uid://db3s5porrsgif::::res://images/background/encounter_background.jpg<>res://scripts/encounter_1.gd<>uid://hfoyvrmqnih5::::res://images/encounters/casino_encounter_1/golden-blank-slot-machine-and-slots-game-coins-explosion.png<>uid://bm1yqtwmryf6::::res://images/encounters/casino_encounter_1/symbols/lucky-7-icon.png<>uid://bo10s4mvrl2iy::::res://images/characters/black-cat-png-cute-cat-transparent.png<>uid://c7jbumpbtx7b6::::res://sounds/Lets Go Gambling.mp3
-encounter_2.tscn::PackedScene::3611899201572464206::1722450792::0::1::::<><>::res://scripts/encounter_2.gd<>uid://db3s5porrsgif::::res://images/background/encounter_background.jpg<>uid://ixl73ym7eqvx::::res://images/encounters/sign_encounter_2/Blank-Sign.png<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png
-encounter_3.tscn::PackedScene::2311548888830131825::1722450944::0::1::::<><>::uid://db3s5porrsgif::::res://images/background/encounter_background.jpg<>res://scripts/encounter_3.gd<>uid://cqaefkef76vja::::res://images/characters/cloaked_figure.png<>uid://bglp21j1yo4k5::::res://images/characters/Cloaked_figure2.png<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png
-encounter_4.tscn::PackedScene::2896533028561771806::1722451218::0::1::::<><>::uid://db3s5porrsgif::::res://images/background/encounter_background.jpg<>uid://bor1ywhdgrblt::::res://images/characters/Koopa/1200px-Bowser.webp
+::res://scenes/game/::1722620630
+nameperks.tscn::PackedScene::9175335559792502852::1722620630::0::1::::<><>::res://scripts/nameperks.gd<>uid://dmxhitqjqv6uo::::res://images/background/sundown_in_the_forest.jpg<>uid://xtchiwfxn0et::::res://sounds/bird sound effect.mp3
+::res://scenes/game/encounters/::1722620631
+encounter_1.tscn::PackedScene::2222559867232346142::1722610320::0::1::::<><>::uid://db3s5porrsgif::::res://images/background/encounter_background.jpg<>res://scripts/encounter_1.gd<>uid://hfoyvrmqnih5::::res://images/encounters/casino_encounter_1/golden-blank-slot-machine-and-slots-game-coins-explosion.png<>uid://bm1yqtwmryf6::::res://images/encounters/casino_encounter_1/symbols/lucky-7-icon.png<>uid://bo10s4mvrl2iy::::res://images/characters/Zimba/black-cat-png-cute-cat-transparent.png<>uid://c7jbumpbtx7b6::::res://sounds/Lets Go Gambling.mp3<>uid://ciwblh6t6lrwm::::res://images/characters/gun/mp5-assault-rifle.webp
+encounter_2.tscn::PackedScene::3611899201572464206::1722620630::0::1::::<><>::res://scripts/encounter_2.gd<>uid://db3s5porrsgif::::res://images/background/encounter_background.jpg<>uid://ixl73ym7eqvx::::res://images/encounters/sign_encounter_2/Blank-Sign.png<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png<>uid://ciwblh6t6lrwm::::res://images/characters/gun/mp5-assault-rifle.webp
+encounter_3.tscn::PackedScene::2311548888830131825::1722620631::0::1::::<><>::uid://db3s5porrsgif::::res://images/background/encounter_background.jpg<>res://scripts/encounter_3.gd<>uid://cqaefkef76vja::::res://images/characters/Yell/cloaked_figure.png<>uid://bglp21j1yo4k5::::res://images/characters/Yell/Cloaked_figure2.png<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png<>uid://ciwblh6t6lrwm::::res://images/characters/gun/mp5-assault-rifle.webp
+encounter_4.tscn::PackedScene::2896533028561771806::1722600377::0::1::::<><>::uid://b1d6bwvagldv8::::res://images/background/fire_background.jpg<>res://scripts/encounter_4.gd<>uid://bor1ywhdgrblt::::res://images/characters/Koopa/1200px-Bowser.webp<>uid://1je8sf41ygwo::::res://images/characters/Mostdeaf/wood-chipper.png<>uid://djwdar3muy6em::::res://images/characters/Mostdeaf/buff arm.png<>uid://b88l7sm7bvo7s::::res://sounds/Star Wars - Duel of the Fates Theme.mp3
+encounter_5.tscn::PackedScene::7708680401439271290::1722604640::0::1::::<><>::
+sorry.tscn::PackedScene::5985667045416944294::1722620630::0::1::::<><>::uid://dwbm5xf0misif::::res://images/characters/Paarthurax/kirby sad.png<>res://scripts/sorry.gd<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png<>uid://cyrs64l1liqn::::res://sounds/Mandela Catalogue_ Amazing Grace.mp3
 ::res://scenes/game/encounters/casino/::1722238992
 ::res://scenes/game/encounters/koopa/::1722171776
 ::res://scenes/game/encounters/landmark/::1722171769
 ::res://scenes/game/encounters/mostdeaf/::1722187406
 ::res://scenes/game/encounters/police/::1722352238
 ::res://scenes/game/encounters/stranger/::1722171783
-::res://scenes/game/encounters/zimba/::1722172617
-::res://scenes/game/endings/::1722450792
-LeadingUpTo.tscn::PackedScene::3079081340995300179::1722450792::0::1::::<><>::
-::res://scenes/game/endings/McDonald/::1722450792
-McDonald's.tscn::PackedScene::6613356807591831468::1722450792::0::1::::<><>::
+::res://scenes/game/encounters/zimba/::1722605512
+encounter_5.tscn::PackedScene::8913748174933909086::1722605512::0::1::::<><>::
+::res://scenes/game/endings/::1722620630
+LeadingUpTo.tscn::PackedScene::3079081340995300179::1722620630::0::1::::<><>::uid://dcpv581gkk0ct::::res://images/forest/unsettling_forest_2.jpg<>res://scripts/LeadingUpTo.gd<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png
+::res://scenes/game/endings/McDonald/::1722620948
+McDonald's.tscn::PackedScene::6613356807591831468::1722620948::0::1::::<><>::res://scripts/McDonald's.gd<>uid://dbkldj4lfaikq::::res://images/background/mcdonalds inside.jpg<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png<>uid://2csyn8yjgkcq::::res://images/characters/Zimba/delicious-cheese-burger-on-transparent-background-png.webp<>uid://cuyh5hxesqt8p::::res://images/characters/Koopa/bowser.png<>uid://1je8sf41ygwo::::res://images/characters/Mostdeaf/wood-chipper.png<>uid://btsg45tkgvq8d::::res://sounds/Restaurant_Ambience _Sound_Effect.mp3<>uid://djwdar3muy6em::::res://images/characters/Mostdeaf/buff arm.png
 ::res://scenes/game/endings/Police/::1722434004
-::res://scenes/game/endings/Tombstone/::1722434012
-::res://scenes/game/search_forest/::1722450792
-scaryforest.gd::GDScript::-1::1722450640::0::1::::<>Node2D<>::
-scaryforest.tscn::PackedScene::7402303697342517275::1722450792::0::1::::<><>::res://scenes/game/search_forest/scaryforest.gd<>uid://dxcl4a8047r7o::::res://sounds/Walking In Forest.mp3<>uid://b6rf0ra2ivj6::::res://sounds/Forest Night After The Storm.mp3<>uid://dcpv581gkk0ct::::res://images/forest/unsettling_forest_2.jpg<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png
-::res://scripts/::1722450944
-encounter_1.gd::GDScript::-1::1722415640::0::1::::<>Node2D<>::
-encounter_2.gd::GDScript::-1::1722352085::0::1::::<>Node2D<>::
-encounter_3.gd::GDScript::-1::1722450362::0::1::::<>Node2D<>::
+::res://scenes/game/endings/Secret/::1722620631
+Secret.tscn::PackedScene::8142896563587941689::1722620631::0::1::::<><>::uid://n275cuwoxrs5::::res://images/characters/Zimba/Zimba transparent.png<>res://sounds/Secret.gd<>uid://bf81pkuxmu765::::res://images/characters/Jaiklay/Blob_07.webp<>uid://bt1lie1euxno7::::res://images/characters/Jaiklay/Squirrel-PNG.png<>uid://rw1s5yrjwjtv::::res://images/background/behind mcdonalds.jpg<>uid://cc0uo75acjx7r::::res://sounds/Dog Licking Sound.mp3<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png
+::res://scenes/game/endings/Tombstone/::1722620630
+tombstone.tscn::PackedScene::7926711254554901771::1722620630::0::1::::<><>::uid://dl0t80e5qoifi::::res://images/characters/gravestone/graveyard-background.jpg<>res://scripts/tombstone.gd<>uid://1comyd3gh6no::::res://images/characters/gravestone/gravestone.png<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png
+::res://scenes/game/search_forest/::1722620630
+scaryforest.gd::GDScript::-1::1722615154::0::1::::<>Node2D<>::
+scaryforest.tscn::PackedScene::7402303697342517275::1722620630::0::1::::<><>::res://scenes/game/search_forest/scaryforest.gd<>uid://dxcl4a8047r7o::::res://sounds/Walking In Forest.mp3<>uid://b6rf0ra2ivj6::::res://sounds/Forest Night After The Storm.mp3<>uid://dcpv581gkk0ct::::res://images/forest/unsettling_forest_2.jpg<>uid://c55bplvds7ki8::::res://images/direction/orange-right-arrow.png
+::res://scripts/::1722620948
+encounter_1.gd::GDScript::-1::1722607360::0::1::::<>Node2D<>::
+encounter_2.gd::GDScript::-1::1722609782::0::1::::<>Node2D<>::
+encounter_3.gd::GDScript::-1::1722615172::0::1::::<>Node2D<>::
+encounter_4.gd::GDScript::-1::1722595011::0::1::::<>Node2D<>::
 intro.gd::GDScript::-1::1722183616::0::1::::<>Node2D<>::
+LeadingUpTo.gd::GDScript::-1::1722618183::0::1::::<>Node2D<>::
 main_screen.gd::GDScript::-1::1722179644::0::1::::<>Control<>::
-nameperks.gd::GDScript::-1::1722450789::0::1::::<>Node2D<>::
+McDonald's.gd::GDScript::-1::1722620948::0::1::::<>Node2D<>::
+nameperks.gd::GDScript::-1::1722613896::0::1::::<>Node2D<>::
 settings.gd::GDScript::-1::1721984060::0::1::::<>Node2D<>::
-::res://singleton/::1722449774
-Global.gd::GDScript::-1::1722449774::0::1::::<>Node<>::
-::res://sounds/::1722450944
+sorry.gd::GDScript::-1::1722614300::0::1::::<>Node2D<>::
+tombstone.gd::GDScript::-1::1722607733::0::1::::<>Node2D<>::
+::res://singleton/::1722620790
+Global.gd::GDScript::-1::1722620790::0::1::::<>Node<>::
+::res://sounds/::1722620607
+AR-15 Sound Effect.mp3::AudioStreamMP3::4275727952331326848::1722603534::1722603535::1::::<><>::
 bird sound effect.mp3::AudioStreamMP3::1653700969975698935::1722449186::1722449186::1::::<><>::
 Bruh sound effect.mp3::AudioStreamMP3::1226092585034820232::1720981359::1721986420::1::::<><>::
 Coins Drop Sound Effect (HD).mp3::AudioStreamMP3::5712043709122690501::1722240495::1722240495::1::::<><>::
+Dog Licking Sound.mp3::AudioStreamMP3::4966069566578150293::1722620057::1722620390::1::::<><>::
 Forest Night After The Storm.mp3::AudioStreamMP3::135227011242288597::1722191834::1722191853::1::::<><>::
 Lets Go Gambling.mp3::AudioStreamMP3::7037560849984675593::1722245430::1722245430::1::::<><>::
+Mandela Catalogue_ Amazing Grace.mp3::AudioStreamMP3::190988760098976485::1722598160::1722598160::1::::<><>::
+Secret.gd::GDScript::-1::1722620607::0::1::::<>Node2D<>::
 Restaurant_Ambience _Sound_Effect.mp3::AudioStreamMP3::3757585207883638573::1721679314::1721679321::1::::<><>::
+Star Wars - Duel of the Fates Theme.mp3::AudioStreamMP3::4771502987371598274::1722594815::1722594815::1::::<><>::
 Walking In Forest.mp3::AudioStreamMP3::8778453937360304194::1722186112::1722186134::1::::<><>::

@@ -10,6 +10,12 @@ var checkbox_descriptions = {
 }
 
 func _ready():
+	if(Global.endings[0] == 1):
+		$Checkmark1.visible = true
+	if(Global.endings[1] == 1):
+		$Checkmark2.visible = true
+	if(Global.endings[2] == 1):
+		$Checkmark3.visible = true
 	$AudioStreamPlayer.play()
 	# Display the description of the first button initially
 	if choiceContainer.get_child_count() > 0:
@@ -47,15 +53,14 @@ func _on_back_pressed():
 
 
 func _on_continue_pressed():
+	Global.resetStats()
 	if(Global.perk == "Bone B Gun"):
 		Global.has_gun = true
 	elif(Global.perk == "Hell Ygar Skill"):
 		Global.romanian = true
 	elif(Global.perk == "Koo Pa Coin"):
+		Global.koopa_badge = true
 		Global.money = 5000
-	else:
-		Global.has_gun = true
-		Global.perk = "Bone B Gun"
 	if($Name.text == ""):
 		Global.namePlayer = "The one with no name"
 	else:
